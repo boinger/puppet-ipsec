@@ -20,31 +20,31 @@
 #
 Puppet::Type.newtype(:ip_connection) do
 
-    @doc = "An IP connection between two nodes."
+  @doc = "An IP connection between two nodes."
 
-    ensurable
+  ensurable
 
-    newparam(:name) do
-    end
+  newparam(:name) do
+  end
 
-    newparam(:servicetype) do
-        # validation missing
-        desc "The type of the service e.g. ldap."
-    end
+  newparam(:servicetype) do
+    # validation missing
+    desc "The type of the service e.g. ldap."
+  end
 
-    newparam(:sourceip) do
-        # validation missing
-        desc "The source IP."
-    end
+  newparam(:sourceip) do
+    # validation missing
+    desc "The source IP."
+  end
 
-    newparam(:destip) do
-       # validation missing
-        desc "The destination IP."
-    end
+  newparam(:destip) do
+   # validation missing
+    desc "The destination IP."
+  end
 
-	newparam(:port) do
-		# validation missing
-		desc "The port of the connection"
-	end
+  newparam(:port) do
+    # validation missing
+    desc "The port of the connection"
+  end
 
 end
